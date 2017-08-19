@@ -16,16 +16,20 @@
         <input type="text" name="email" id="email"><br>
         <label for="tel">Tel:</label><br>
         <input type="text" name="tel" id="tel"><br>
-        <label for="wiadomosc">Wiadomość:</label><br>
-        <textarea>
-            <input type="text" name="wiadomosc" id="wiadomosc">
-        </textarea><br>
         <label for="miasto">Miasto:</label>
-        <select>
+        <select name="miasto" id="miasto">
           <option value="krakow">Kraków</option>
           <option value="warszawa">Warszawa</option>
           <option value="gdansk">Gdańsk</option>
-        </select>
+        </select><br>
+        <label for="plec">Płeć:</label>
+        <input type="radio" name="plec" id="plec" value="mezczyzna" checked>Mężczyzna 
+        <input type="radio" name="plec" id="plec" value="kobieta">Kobieta<br>
+        <label for="zgoda">Wyrażam zgodę na przetwarzanie moich danych osobowych </label>
+        <input type="checkbox" name="zgoda" id="zgoda"><br>
+        <label for="wiadomosc">Wiadomość:</label><br>
+        <textarea rows="5" cols="50" name="wiadomosc" id="wiadomosc">Treść wiadomości...</textarea><br>
+        <input type="reset" value="Wyczyść"> 
         <input type="submit" value="Wyślij">
     </form>
 </body>

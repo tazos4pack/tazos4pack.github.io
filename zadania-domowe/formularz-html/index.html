@@ -23,6 +23,7 @@
 
             <label for="wojewodztwo">Województwo:</label><br>
             <select name="wojewodztwo" id="wojewodztwo" required>
+              <option value="placeholder" disabled selected>Wybierz z listy</option>
               <option value="mazowieckie">Mazowieckie</option>
               <option value="pomorskie">Pomorskie</option>
               <option value="slaskie">Ślunskie</option>
@@ -30,10 +31,10 @@
             </select>*<br>
 
             <label for="kod">Kod pocztowy:</label><br>
-            <input type="text" pattern="[0-9]{2}-[0-9]{3}"><br>
+            <input type="text" pattern="[0-9]{2}-[0-9]{3}" id="kod" placeholder="XX-XXX"><br>
 
             <label for="wiadomosc">Wiadomość:</label><br>
-            <textarea rows="5" cols="50" maxlength="999" name="wiadomosc" id="wiadomosc">Treść wiadomości...</textarea><br>
+            <textarea rows="5" cols="50" maxlength="999" name="wiadomosc" id="wiadomosc" placeholder="Treść wiadomości..."></textarea><br>
 
             <input type="reset" value="Wyczyść">
             <input type="submit" value="Wyślij">

@@ -11,25 +11,34 @@
     <form action="https://formspree.io/mateusz.wasiucionek@gmail.com" method="POST">
         <label for="imie">Imię:</label><br>
         <input type="text" name="imie" id="imie"><br>
+        
         <label for="nazwisko">Nazwisko:</label><br>
         <input type="text" name="nazwisko" id="nazwisko"><br>
+        
         <label for="email">Email:</label><br>
         <input type="text" name="email" id="email"><br>
+        
         <label for="tel">Tel:</label><br>
         <input type="text" name="tel" id="tel"><br>
+        
         <label for="miasto">Miasto:</label>
         <select name="miasto" id="miasto">
+          <option value="placeholder" disabled selected>Wybierz z listy</option>
           <option value="krakow">Kraków</option>
           <option value="warszawa">Warszawa</option>
           <option value="gdansk">Gdańsk</option>
         </select><br>
-        <label for="plec">Płeć:</label>
-        <input type="radio" name="plec" id="plec" value="mezczyzna" checked>Mężczyzna
-        <input type="radio" name="plec" id="plec" value="kobieta">Kobieta<br>
+        
+        Płeć:<br>
+        <label for="plec"><input type="radio" name="plec" value="mezczyzna" id="mezczyzna" checked>Mężczyzna</label> 
+        <label for="plec"><input type="radio" name="plec" value="kobieta" id="kobieta" checked>Kobieta</label><br>
+        
         <label for="zgoda">Wyrażam zgodę na przetwarzanie moich danych osobowych </label>
-        <input type="checkbox" name="zgoda" id="zgoda"><br>
+        <input type="checkbox" name="zgoda" id="zgoda" required><br>
+        
         <label for="wiadomosc">Wiadomość:</label><br>
         <textarea rows="5" cols="50" maxlength="999" name="wiadomosc" id="wiadomosc">Treść wiadomości...</textarea><br>
+        
         <input type="reset" value="Wyczyść">
         <input type="submit" value="Wyślij">
     </form>

@@ -8,18 +8,37 @@
 
 <body>
     <form action="https://formspree.io/mateusz.wasiucionek@gmail.com" method="POST">
-        <label for="imie">Imię:</label><br>
-        <input type="text" name="imie" id="imie"><br>
-        <label for="nazwisko">Nazwisko:</label><br>
-        <input type="text" name="nazwisko" id="nazwisko"><br>
-        <label for="email">Email:</label><br>
-        <input type="text" name="email" id="email"><br>
-        <label for="tel">Tel:</label><br>
-        <input type="text" name="tel" id="tel"><br>
-        <label for="wiadomosc">Wiadomość:</label><br>
-        <textarea rows="5" cols="50" maxlength="999" name="wiadomosc" id="wiadomosc">Treść wiadomości...</textarea><br>
-        <input type="reset" value="Wyczyść"> 
-        <input type="submit" value="Wyślij">
+        <fieldset>
+            <label for="imie">Imię:</label><br>
+            <input type="text" name="imie" id="imie" required>*<br>
+
+            <label for="nazwisko">Nazwisko:</label><br>
+            <input type="text" name="nazwisko" id="nazwisko" required>*<br>
+
+            <label for="email">Email:</label><br>
+            <input type="text" name="email" id="email" required>*<br>
+
+            <label for="tel">Tel:</label><br>
+            <input type="text" name="tel" id="tel" required>*<br>
+
+            <label for="wojewodztwo">Województwo:</label><br>
+            <select name="wojewodztwo" id="wojewodztwo" required>
+              <option value="mazowieckie">Mazowieckie</option>
+              <option value="pomorskie">Pomorskie</option>
+              <option value="slaskie">Ślunskie</option>
+              <option value="dolnoslaskie">Dolnośląskie</option>
+            </select>*<br>
+
+            <label for="kod">Kod pocztowy:</label><br>
+            <input type="text" pattern="[0-9]{2}-[0-9]{3}"><br>
+
+            <label for="wiadomosc">Wiadomość:</label><br>
+            <textarea rows="5" cols="50" maxlength="999" name="wiadomosc" id="wiadomosc">Treść wiadomości...</textarea><br>
+
+            <input type="reset" value="Wyczyść">
+            <input type="submit" value="Wyślij">
+        </fieldset>
+        *pola wymagane
     </form>
 </body>
 

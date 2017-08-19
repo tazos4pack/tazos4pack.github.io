@@ -17,8 +17,15 @@
         <label for="tel">Tel:</label><br>
         <input type="text" name="tel" id="tel"><br>
         <label for="wiadomosc">Wiadomość:</label><br>
-        <textarea rows="5" cols="50" name="wiadomosc" id="wiadomosc">Treść wiadomości...</textarea><br>
-        <input type="reset" value="Wyczyść"> 
+        <textarea>
+            <input type="text" name="wiadomosc" id="wiadomosc">
+        </textarea><br>
+        <label for="miasto">Miasto:</label>
+        <select>
+          <option value="krakow">Kraków</option>
+          <option value="warszawa">Warszawa</option>
+          <option value="gdansk">Gdańsk</option>
+        </select>
         <input type="submit" value="Wyślij">
     </form>
 </body>

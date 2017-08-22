@@ -3,49 +3,61 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Akademia108 -formularz zgłoszeniowy</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <form action="https://formspree.io/mateusz.wasiucionek@gmail.com" method="POST">
-        <fieldset>
-            <label for="imie">Imię:</label><br>
-            <input type="text" name="imie" id="imie" required>*<br>
+    <h1>Zapisz się na kurs:</h1>
+    <div>
+        <form action="https://formspree.io/mateusz.wasiucionek@gmail.com" method="POST">
+            <fieldset class="fieldset-auto-width">
+                <label for="imie">Imię:</label><br>
+                <input type="text" name="imie" id="imie" required>*<br>
+                <hr>
 
-            <label for="nazwisko">Nazwisko:</label><br>
-            <input type="text" name="nazwisko" id="nazwisko" required>*<br>
+                <label for="nazwisko">Nazwisko:</label><br>
+                <input type="text" name="nazwisko" id="nazwisko" required>*<br>
+                <hr>
 
-            <label for="email">Email:</label><br>
-            <input type="text" name="email" id="email" required>*<br>
+                <label for="email">Email:</label><br>
+                <input type="text" name="email" id="email" required>*<br>
+                <hr>
 
-            <label for="tel">Tel:</label><br>
-            <input type="text" name="tel" id="tel" required>*<br>
+                <label for="tel">Tel:</label><br>
+                <input type="text" name="tel" id="tel" required>*<br>
+                <hr>
 
-            <label for="miasto">Miasto:</label>
-            <select name="miasto" id="miasto" required>
-              <option value="placeholder" disabled selected>Wybierz z listy</option>
-              <option value="krakow">Kraków</option>
-              <option value="warszawa">Warszawa</option>
-              <option value="gdansk">Gdańsk</option>
-            </select>*<br>
+                <label for="miasto">Miasto:</label><br>
+                <select name="miasto" id="miasto" required>
+                  <option value="placeholder" disabled selected>Wybierz z listy</option>
+                  <option value="krakow">Kraków</option>
+                  <option value="warszawa">Warszawa</option>
+                  <option value="gdansk">Gdańsk</option>
+                </select>*<br>
+                <hr>
 
-            <label for="kod">Kod pocztowy:</label><br>
-            <input type="text" pattern="[0-9]{2}-[0-9]{3}" id="kod" placeholder="XX-XXX"><br>
-            
-            Płeć:<br>
-            <label for="plec"><input type="radio" name="plec" value="mezczyzna" id="mezczyzna" checked>Mężczyzna</label>
-            <label for="plec"><input type="radio" name="plec" value="kobieta" id="kobieta">Kobieta</label><br>
+                <label for="kod">Kod pocztowy:</label><br>
+                <input type="text" pattern="[0-9]{2}-[0-9]{3}" id="kod" placeholder="XX-XXX"><br>
+                <hr> Płeć:
 
-            <label for="zgoda">Wyrażam zgodę na przetwarzanie moich danych osobowych </label>
-            <input type="checkbox" name="zgoda" id="zgoda" required><br>
+                <br>
+                <label for="plec"><input type="radio" name="plec" value="mezczyzna" id="mezczyzna" checked>Mężczyzna</label>
+                <label for="plec"><input type="radio" name="plec" value="kobieta" id="kobieta">Kobieta</label><br>
+                <hr>
 
-            <label for="wiadomosc">Wiadomość:</label><br>
-            <textarea rows="5" cols="50" maxlength="999" name="wiadomosc" id="wiadomosc">Treść wiadomości...</textarea><br>
+                <label for="zgoda">Wyrażam zgodę na przetwarzanie moich danych osobowych </label>
+                <input type="checkbox" name="zgoda" id="zgoda" required><br>
+                <hr>
 
-            <input type="reset" value="Wyczyść">
-            <input type="submit" value="Wyślij">
-        </fieldset><br> *Pola wymagane
-    </form>
+                <label for="wiadomosc">Wiadomość:</label><br>
+                <textarea rows="5" cols="50" maxlength="999" name="wiadomosc" id="wiadomosc" placeholder="Treść wiadomości"></textarea><br>
+
+                <input type="reset" value="Wyczyść">
+                <input type="submit" value="Wyślij">
+            </fieldset><br> *Pola wymagane
+        </form>
+    </div>
 </body>
 
 </html>

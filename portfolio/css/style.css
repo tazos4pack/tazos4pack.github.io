@@ -97,7 +97,8 @@ section {
     min-height: 500px;
     right: 0;
     left: 0;
-    background: #f9fcfe;
+    /*    background: #f9fcfe;*/
+    background: #6c6f9a;
     box-shadow: 0px 6px 10px rgba(136, 136, 136, 0.42);
 }
 
@@ -108,8 +109,8 @@ section {
 }
 
 .container {
-    margin-left: 6em;
-    margin-right: 6em;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 #about img {
@@ -136,11 +137,26 @@ section {
     line-height: 3em;
 }
 
-#contact {
-    background: #213b50;
-}
-
 .portfolio-elements {
     font-size: 0;
-    display: inline;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.portfolio-elements div {
+    display: inline-block;
+    width: 33.33%;
+    height: auto;
+    overflow: visible;
+}
+
+.portfolio-elements img {
+    width: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+#contact {
+    background: #213b50;
 }

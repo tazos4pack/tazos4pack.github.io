@@ -1,0 +1,146 @@
+body {
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 9em;
+    color: #1ac056;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+h1 span {
+    color: white;
+    font-weight: 100;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 2.5em;
+    color: white;
+    margin-top: -20px;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    color: #1ac056;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 1.5em;
+}
+
+h3 span {
+    font-family: 'Lato', sans-serif;
+    color: #291f1a;
+    font-weight: 100;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+#menu {
+    background-color: white;
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    top: 0;
+}
+
+.menu-item {
+    font-size: 18px;
+    display: inline-block;
+}
+
+#menu ul {
+    text-align: right;
+    padding-right: 70px;
+}
+
+li a {
+    text-decoration: none;
+    color: #1ac056;
+    padding-right: 70px;
+    font-weight: 300;
+}
+
+li a:hover {
+    color: #291f1a;
+}
+
+section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+    width: 100%;
+}
+
+#header {
+    padding-top: 20vh;
+    width: 100%;
+    height: -webkit-fill-available;
+    background-image: url('../img/header-background.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#about {
+    width: 100%;
+    min-height: 500px;
+    right: 0;
+    left: 0;
+    background: #f9fcfe;
+    box-shadow: 0px 6px 10px rgba(136, 136, 136, 0.42);
+}
+
+.portret {
+    height: 300px;
+    float: left;
+    padding-left: 6em;
+}
+
+.container {
+    margin-left: 6em;
+    margin-right: 6em;
+}
+
+#about img {
+    display: inline;
+    border-style: solid;
+    border-width: 20px;
+    border-color: white;
+    border-radius: 10%;
+    max-height: 300px;
+    margin-right: 100px;
+}
+
+#skills p {
+    text-align: center;
+}
+
+.skills-icons {
+    text-align: center;
+}
+
+.skills-icons div {
+    display: inline-block;
+    padding: 2.5em;
+    line-height: 3em;
+}
+
+#contact {
+    background: #213b50;
+}
+
+.portfolio-elements {
+    font-size: 0;
+    display: inline;
+}

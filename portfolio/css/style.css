@@ -181,6 +181,7 @@ section {
 
 .social-media a {
     color: white;
+    border: solid 1px #c8cccf;
 }
 
 footer {

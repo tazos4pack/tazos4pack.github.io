@@ -54,6 +54,7 @@ body {
         color: white;
     }
     #naglowek {
+        position: relative;
         padding-top: 40vh;
         padding-left: 8vh;
     }

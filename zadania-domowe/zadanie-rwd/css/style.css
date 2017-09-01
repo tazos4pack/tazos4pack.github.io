@@ -4,27 +4,28 @@ body {
     margin: 0;
 }
 
-
-/*
-@media screen and (min-width: 1px) {
+@media (max-width: 991px) {
     header {
         background-image: url('../img/man-1.jpg');
-        max-height: 99vh;
+        min-height: 50vh;
+        max-width: 100vw;
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
         margin: 0;
-        color: white;
-        position: absolute;
+        color: black;
+        display: block;
+        position: relative;
     }
     #naglowek {
-        padding-top: 8vh;
-        padding-left: 80vh;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        padding-top: 50vh;
     }
 }
-*/
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
     header {
         background-image: url('../img/man-2.jpg');
         min-height: 70vh;
@@ -43,10 +44,10 @@ body {
     }
 }
 
-@media screen and (min-width: 1170px) {
+@media (min-width: 1170px) {
     header {
         background-image: url('../img/man-1.jpg');
-        min-height: 98vh;
+        min-height: 100vh;
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;

@@ -19,6 +19,12 @@
         </ul>
     </nav>
 
+    <nav id="menu-mobile">
+        <ul>
+            <li class="menu-item"><a href="#">menu</a></li>
+        </ul>
+    </nav>
+
     <header id="header">
         <h1 id="main-header-text"><span>Jan</span> Nowak</h1>
         <h2 id="secondary-header-text">Front-End Developer</h2>
@@ -30,7 +36,9 @@
         </div>
         <div class="container">
             <div class="portret">
-                <div><img src="img/jan-nowak.jpg" alt="Jan Nowak"></div>
+                <div class="ramka">
+                    <div><img src="img/jan-nowak.jpg" alt="Jan Nowak"></div>
+                </div>
             </div>
             <div class="o-mnie">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, est, tempore reprehenderit possimus at dolorem consectetur placeat eligendi tempora quisquam nam fuga adipisci assumenda, quam soluta? Illo, molestias, voluptatem sint deserunt sapiente laudantium ipsa enim neque consequuntur, ratione adipisci iure. Saepe expedita odio recusandae amet, minima fugiat culpa esse architecto, odit totam perferendis, commodi neque beatae. Sunt sed numquam nihil, iste veritatis nam laudantium laboriosam eius dicta, vitae esse, assumenda voluptatem! Necessitatibus beatae aliquid at amet recusandae accusantium vitae, corrupti itaque numquam quibusdam ea iste ipsum voluptate eum.</p>
@@ -62,9 +70,45 @@
             <h3><span>Moje</span> portfolio</h3>
         </div>
         <div class="container portfolio-elements">
-            <div class="projekt-x"><img src="img/portfolio1.jpg" alt="Projekt X"></div>
-            <div class="projekt-y"><img src="img/portfolio2.jpg" alt="Projekt Y"></div>
-            <div class="projekt-z"><img src="img/portfolio4.jpg" alt="Projekt Z"></div>
+            <div id="projekt-x" class="single-portfolio-item">
+                <div class="single-portfolio-item-mask">
+                    <div class="single-portfolio-item-mask-content">
+                        <div class="single-portfolio-item-mask-content-inner">
+                            <h4>Lorem ipsum.</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, minima. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, soluta.</p>
+                            <h5>Wykorzystane technologie:</h5>
+                            <p>HTML, CSS, Bootstrap, JavaScript, jQuery</p>
+                            <a href="#" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="projekt-y" class="single-portfolio-item">
+                <div class="single-portfolio-item-mask">
+                    <div class="single-portfolio-item-mask-content">
+                        <div class="single-portfolio-item-mask-content-inner">
+                            <h4>Lorem ipsum.</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, minima. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus!</p>
+                            <h5>Wykorzystane technologie:</h5>
+                            <p>HTML, CSS, Bootstrap, JavaScript, jQuery</p>
+                            <a href="#" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="projekt-z" class="single-portfolio-item">
+                <div class="single-portfolio-item-mask">
+                    <div class="single-portfolio-item-mask-content">
+                        <div class="single-portfolio-item-mask-content-inner">
+                            <h4>Lorem ipsum.</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, minima. Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                            <h5>Wykorzystane technologie:</h5>
+                            <p>HTML, CSS, Bootstrap, JavaScript, jQuery</p>
+                            <a href="#" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -77,12 +121,25 @@
 
                 <div class='social-media'>
                     <a href="facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                    <a href="googleplus.com" target="_blank"><i class="fa fa-google-plus fa-border" aria-hidden="true"></i></a>
-                    <a href="twitter.com" target="_blank"><i class="fa fa-twitter fa-border" aria-hidden="true"></i></a>
-                    <a href="linkedin.com" target="_blank"><i class="fa fa-linkedin fa-border" aria-hidden="true"></i></a>
+                    <a href="googleplus.com" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                    <a href="twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="linkedin.com" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                 </div>
             </div>
-            <div class="contact-form"></div>
+            <div class="contact-form">
+                <form action="https://formspree.io/mateusz.wasiucionek@gmail.com" method="POST">
+                    <label for="imie"></label><br>
+                    <input type="text" name="imie" id="imie" placeholder="Imię i nazwisko" required><br>
+
+                    <label for="email"></label><br>
+                    <input type="text" name="email" id="email" placeholder="E-mail" required><br>
+
+                    <label for="wiadomosc"></label><br>
+                    <textarea rows="5" cols="50" maxlength="999" name="wiadomosc" id="wiadomosc" placeholder="Treść wiadomości..."></textarea><br>
+
+                    <input type="submit" value="Wyślij">
+                </form>
+            </div>
         </div>
     </section>
 

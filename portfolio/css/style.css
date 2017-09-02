@@ -1,9 +1,6 @@
-/*
 * {
-    padding: 0;
-    margin: 0;
+    box-sizing: border-box;
 }
-*/
 
 body {
     background-color: white;
@@ -67,16 +64,15 @@ p {
     width: 100%;
     height: auto;
     top: 0;
+    z-index: 2;
 }
 
-#menu-mobile {
-    background-color: white;
-    position: fixed;
-    margin: 0;
-    width: 100%;
-    height: auto;
-    top: 0;
-    text-align: right;
+#menu label {
+    display: none;
+}
+
+#menu input[type="checkbox"] {
+    display: none;
 }
 
 .menu-item {
@@ -254,8 +250,8 @@ section {
 }
 
 .contact-form {
-    width: 50%;
-    margin-top: 3.5em;
+    width: 49.99%;
+    margin-top: 5.5em;
     float: left;
 }
 
@@ -290,7 +286,8 @@ input[type="text"] {
     background-color: #2b4a64;
     width: 100%;
     padding: 15px;
-    border: #2b4a64 0
+    border: #2b4a64 0;
+    margin-bottom: 10px;
 }
 
 input[type="text"]:focus {
@@ -303,6 +300,7 @@ textarea {
     width: 100%;
     padding: 15px;
     border: #2b4a64 0;
+    margin-bottom: 10px;
 }
 
 textarea:focus {
@@ -330,14 +328,88 @@ footer {
     background: #11212e;
 }
 
-@media (max-width: 991px) {
-    #menu {
-        display: none;
+@media all and (max-width: 1200px) {
+    .single-portfolio-item {
+        width: 50%;
+    }
+    .single-portfolio-item:last-child {
+        width: 100%;
     }
 }
 
-@media (min-width: 991px) {
-    #menu-mobile {
+@media all and (max-width: 768px) {
+    #menu .toggle {
+        display: block;
+        background-color: #fff;
+        padding: 0 20px;
+        color: #1ac056;
+        font-size: 20px;
+        line-height: 60px;
+        text-decoration: none;
+        border: none;
+        text-align: right;
+    }
+    ul {
         display: none;
+    }
+    #menu #drop:checked+ul {
+        display: block;
+        padding-right: 5px;
+    }
+    li {
+        display: block;
+        width: 100%;
+        padding: 20px;
+        text-align: right;
+    }
+    a {
+        padding-right: 18px;
+    }
+    header {
+        max-height: 60vh;
+    }
+    .header-contet {
+        padding: 10%;
+    }
+    .figurre {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin-bottom: 2em;
+    }
+    img {
+        max-height: inherit;
+    }
+    .single-portfolio-item {
+        width: 100%;
+    }
+    .contact-title {
+        width: 100%;
+        text-align: center;
+    }
+    .contact-title a {
+        margin: 0;
+    }
+    .contact-form {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 680px) {
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 1.5em;
+        margin-top: 1em;
+    }
+    section {
+        padding: 0 40px 50px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    section {
+        padding: 0 10px 30px;
     }
 }

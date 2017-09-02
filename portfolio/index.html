@@ -9,8 +9,11 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 
+
 <body>
     <nav id="menu">
+        <label class="toggle" for="drop">menu</label>
+        <input type="checkbox" id="drop">
         <ul>
             <li class="menu-item"><a href="#about">o mnie</a></li>
             <li class="menu-item"><a href="#skills">umiejętności</a></li>
@@ -19,15 +22,11 @@
         </ul>
     </nav>
 
-    <nav id="menu-mobile">
-        <ul>
-            <li class="menu-item"><a href="#">menu</a></li>
-        </ul>
-    </nav>
-
     <header id="header">
-        <h1 id="main-header-text"><span>Jan</span> Nowak</h1>
-        <h2 id="secondary-header-text">Front-End Developer</h2>
+        <div class="header-content">
+            <h1 id="main-header-text"><span>Jan</span> Nowak</h1>
+            <h2 id="secondary-header-text">Front-End Developer</h2>
+        </div>
     </header>
 
     <section id="about">
@@ -35,12 +34,12 @@
             <h3><span>O</span> mnie</h3>
         </div>
         <div class="container">
-            <div class="portret">
+            <div class="portret figurre">
                 <div class="ramka">
                     <div><img src="img/jan-nowak.jpg" alt="Jan Nowak"></div>
                 </div>
             </div>
-            <div class="o-mnie">
+            <div class="o-mnie figurre">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, est, tempore reprehenderit possimus at dolorem consectetur placeat eligendi tempora quisquam nam fuga adipisci assumenda, quam soluta? Illo, molestias, voluptatem sint deserunt sapiente laudantium ipsa enim neque consequuntur, ratione adipisci iure. Saepe expedita odio recusandae amet, minima fugiat culpa esse architecto, odit totam perferendis, commodi neque beatae. Sunt sed numquam nihil, iste veritatis nam laudantium laboriosam eius dicta, vitae esse, assumenda voluptatem! Necessitatibus beatae aliquid at amet recusandae accusantium vitae, corrupti itaque numquam quibusdam ea iste ipsum voluptate eum.</p>
             </div>
         </div>
@@ -75,7 +74,7 @@
                     <div class="single-portfolio-item-mask-content">
                         <div class="single-portfolio-item-mask-content-inner">
                             <h4>Lorem ipsum.</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, minima. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, soluta.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, minima. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                             <h5>Wykorzystane technologie:</h5>
                             <p>HTML, CSS, Bootstrap, JavaScript, jQuery</p>
                             <a href="#" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a>
@@ -88,7 +87,7 @@
                     <div class="single-portfolio-item-mask-content">
                         <div class="single-portfolio-item-mask-content-inner">
                             <h4>Lorem ipsum.</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, minima. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus!</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, minima. Lorem ipsum dolor sit amet. Necessitatibus!</p>
                             <h5>Wykorzystane technologie:</h5>
                             <p>HTML, CSS, Bootstrap, JavaScript, jQuery</p>
                             <a href="#" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a>
@@ -128,14 +127,14 @@
             </div>
             <div class="contact-form">
                 <form action="https://formspree.io/mateusz.wasiucionek@gmail.com" method="POST">
-                    <label for="imie"></label><br>
-                    <input type="text" name="imie" id="imie" placeholder="Imię i nazwisko" required><br>
+                    <label for="imie"></label>
+                    <input type="text" name="imie" id="imie" placeholder="Imię i nazwisko" required>
 
-                    <label for="email"></label><br>
-                    <input type="text" name="email" id="email" placeholder="E-mail" required><br>
+                    <label for="email"></label>
+                    <input type="text" name="email" id="email" placeholder="E-mail" required>
 
-                    <label for="wiadomosc"></label><br>
-                    <textarea rows="5" cols="50" maxlength="999" name="wiadomosc" id="wiadomosc" placeholder="Treść wiadomości..."></textarea><br>
+                    <label for="wiadomosc"></label>
+                    <textarea rows="5" cols="50" maxlength="999" name="wiadomosc" id="wiadomosc" placeholder="Treść wiadomości..."></textarea>
 
                     <input type="submit" value="Wyślij">
                 </form>

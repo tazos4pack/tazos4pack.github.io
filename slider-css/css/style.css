@@ -1,0 +1,184 @@
+    body {
+        animation: colorchange 50s infinite;
+        /* animation-name followed by duration in seconds*/
+        /* you could also use milliseconds (ms) or something like 2.5s */
+        -webkit-animation: colorchange 50s infinite;
+        /* Chrome and Safari */
+    }
+    
+    a {
+        display: inline-block;
+        width: 55px;
+        height: 55px;
+    }
+    
+    @keyframes resize {
+        0%,
+        100% {
+            width: 10%;
+        }
+        50% {
+            width: 8%;
+        }
+    }
+    
+    @keyframes colorchange {
+        0% {
+            background: red;
+        }
+        25% {
+            background: yellow;
+        }
+        50% {
+            background: blue;
+        }
+        75% {
+            background: green;
+        }
+        100% {
+            background: red;
+        }
+    }
+    
+    @-webkit-keyframes colorchange
+    /* Safari and Chrome - necessary duplicate */
+    
+    {
+        0% {
+            background: red;
+        }
+        25% {
+            background: yellow;
+        }
+        50% {
+            background: blue;
+        }
+        75% {
+            background: green;
+        }
+        100% {
+            background: red;
+        }
+    }
+    
+    #slider {
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    .title {
+        height: 80px;
+        width: 100%;
+    }
+    
+    .heart {
+        animation-name: resize;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    
+    #slider-area {
+        padding-top: 58px;
+    }
+    /*
+    #thumb1 {
+        background-image: url('../img/thumb1.png');
+    }
+    
+    #thumb2 {
+        background-image: url('../img/thumb2.png');
+    }
+    
+    #thumb3 {
+        background-image: url('../img/thumb3.png');
+    }
+    
+    #thumb4 {
+        background-image: url('../img/thumb4.png');
+    }
+    
+    #thumb5 {
+        background-image: url('../img/thumb5.png');
+    }
+    
+    #thumb6 {
+        background-image: url('../img/thumb6.png');
+    }
+    
+    #thumb7 {
+        background-image: url('../img/thumb7.png');
+    }
+*/
+    
+    .thumb {
+        width: 60px;
+        height: 60px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        display: inline-block;
+        margin: 4px;
+    }
+    
+    .slide-screen {
+        width: 500px;
+        height: 350px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    #link1 {
+        background-image: url('../img/slide1.png');
+    }
+    
+    #link2 {
+        background-image: url('../img/slide2.png');
+    }
+    
+    #link3 {
+        background-image: url('../img/slide3.png');
+    }
+    
+    #link4 {
+        background-image: url('../img/slide4.png');
+    }
+    
+    #link5 {
+        background-image: url('../img/slide5.png');
+    }
+    
+    #link6 {
+        background-image: url('../img/slide6.png');
+    }
+    
+    #link7 {
+        background-image: url('../img/slide7.png');
+    }
+    
+    .tab {
+        padding-top: 60px;
+    }
+    
+    .tab div {
+        display: none;
+    }
+    
+    .tab div:target {
+        display: block;
+    }
+    /*
+    .tab .slider-screen {
+        display: none;
+    }
+    
+    .tab .slider-screen:target {
+        display: block;
+        width: 500px;
+        height: 350px;
+        text-align: center;
+        margin: 0 auto;
+    }
+*/

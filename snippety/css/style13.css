@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    background-color: brown;
+    height: 300px;
+}
+
+.parallax {
+    background-image: url('../img/par.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

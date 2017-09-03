@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#teatr {
+    width: 100%;
+    height: 100vh;
+    background-color: saddlebrown;
+}
+
+.kurtyn {
+    width: 100%;
+    height: 50vh;
+}
+
+.up {
+    background-color: royalblue;
+    animation-name: kurtyna-up;
+    animation-duration: 2s;
+}
+
+.down {
+    background-color: navajowhite;
+    animation-name: kurtyna-down;
+    animation-duration: 2s;
+}
+
+@keyframes kurtyna-up {
+    from {
+        transform: translate(0, -50vh);
+    }
+    to {
+        transform: translate(0, 0)
+    }
+}
+
+@keyframes kurtyna-down {
+    from {
+        transform: translate(0, 50vh);
+    }
+    to {
+        transform: translate(0, 0)
+    }
+}

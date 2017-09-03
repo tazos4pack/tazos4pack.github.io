@@ -1,0 +1,21 @@
+.bifor p::before {
+    content: "przed elementem ";
+    color: red;
+}
+
+.aft p::after {
+    content: " po elemencie";
+    color: blue;
+}
+
+.fl p::first-letter {
+    color: green;
+}
+
+.line p::first-line {
+    background-color: yellow;
+}
+
+.select p::selection {
+    background-color: deeppink;
+}

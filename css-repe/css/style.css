@@ -1,3 +1,9 @@
+body {
+    background-image: url('../img/background.jpg');
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+}
+
 .bifor:target p::before {
     content: "klikłeś! ";
     color: red;
@@ -67,4 +73,123 @@ div[suma$="80"] {
 
 div[suma="3000"] {
     background-color: blue;
+}
+
+#blok {
+    display: block;
+    background-color: #4ace87;
+    margin-bottom: 10px;
+}
+
+.lina {
+    display: inline;
+}
+
+.niebieski {
+    background-color: #7fc4ff;
+}
+
+.zielony {
+    background-color: forestgreen;
+}
+
+#linoblok li {
+    height: 100px;
+    width: 100px;
+    border: 3px dashed orange;
+    background-color: rgba(255, 164, 0, 0.28);
+    display: inline-block;
+    margin: 10px;
+}
+
+#floty div {
+    padding-bottom: 10px;
+}
+
+.fll {
+    float: left;
+    margin: 10px;
+}
+
+.flr {
+    float: right;
+}
+
+#floty p:last-child {
+    clear: both;
+}
+
+.ower {
+    width: 200px;
+    height: 108px;
+    margin-bottom: 30px;
+}
+
+#visible {
+    overflow: visible;
+    border: 2px solid red;
+}
+
+#hidden {
+    overflow: hidden;
+    border: 2px dashed pink;
+}
+
+#tes1 {
+    overflow: scroll;
+    border: 2px dotted orange;
+}
+
+#tes0 {
+    overflow: auto;
+    border: 2px solid green;
+}
+
+.bbox {
+    border: 30px solid blue;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    display: inline-block;
+}
+
+#inner {
+    box-sizing: content-box;
+    background-color: aquamarine;
+}
+
+#outer {
+    box-sizing: border-box;
+    background-color: darkkhaki;
+}
+
+#respons {
+    font-size: 0;
+}
+
+.insidebox {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 8px solid orange;
+    padding: 50px 50px 100px 50px;
+    font-size: 16px;
+    text-align: center;
+}
+
+@media (max-width: 699px) {
+    .insidebox {
+        width: 100%;
+    }
+}
+
+@media (min-width: 700px) {
+    .insidebox {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1170px) {
+    .insidebox {
+        width: 25%;
+    }
 }

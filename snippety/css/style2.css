@@ -1,7 +1,59 @@
+.social-links a {
+    text-align: center;
+    float: left;
+    width: 36px;
+    height: 36px;
+    border: 2px solid #909090;
+    border-radius: 100%;
+    margin-right: 7px;
+    /*space between*/
+    display: flex;
+    align-items: flex-start;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+}
+
+.social-links a i {
+    font-size: 20px;
+    align-self: center;
+    color: #909090;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    margin: 0 auto;
+}
+
+.social-links a i::before {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.social-links a:hover i {
+    color: #fff;
+}
+
+
+/*
+a::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    font-size: 1.85rem;
+    line-height: inherit;
+    text-align: center;
+    text-indent: 0;
+}
+
 i {
     background-color: aquamarine;
     border-radius: 50%;
     padding: 20px;
+    align-self: center;
 }
 
 a:link {
@@ -15,3 +67,4 @@ a:hover {
 i:hover {
     background-color: hotpink;
 }
+*/

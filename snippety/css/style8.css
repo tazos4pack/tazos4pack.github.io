@@ -1,0 +1,19 @@
+q[language="en"] {
+    quotes: "*" "*";
+}
+
+blockquote::before {
+    content: '\201C';
+}
+
+blockquote::after {
+    content: '\201D';
+}
+
+blockquote[language="en"]::before {
+    content: '*';
+}
+
+blockquote[language="en"]::after {
+    content: '*';
+}

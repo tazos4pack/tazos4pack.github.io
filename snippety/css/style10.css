@@ -1,0 +1,17 @@
+#zoom {
+    background-image: url('../img/1.png');
+    margin: 0 auto;
+    height: 473px;
+    width: 715px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: gray;
+    position: relative;
+}
+
+#zoom:hover {
+    background-size: 300%;
+}

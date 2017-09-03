@@ -1,5 +1,5 @@
-.bifor p::before {
-    content: "przed elementem ";
+.bifor:target p::before {
+    content: "klikłeś! ";
     color: red;
 }
 
@@ -18,4 +18,53 @@
 
 .select p::selection {
     background-color: deeppink;
+}
+
+.select {
+    padding-bottom: 300px;
+}
+
+a:link {
+    color: orange;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #cc2121;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#lista {
+    padding-bottom: 50px;
+}
+
+#lista div:nth-child(even) {
+    background-color: #f4c655;
+}
+
+#lista div:nth-child(odd) {
+    background-color: #ab29f0;
+}
+
+#lista div:nth-child(5n+4) {
+    background-color: darkolivegreen;
+}
+
+div[suma] {
+    height: 30px;
+}
+
+div[suma^="15"] {
+    background-color: red;
+}
+
+div[suma$="80"] {
+    color: blue;
+}
+
+div[suma="3000"] {
+    background-color: blue;
 }

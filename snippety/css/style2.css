@@ -1,0 +1,17 @@
+i {
+    background-color: aquamarine;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+a:link {
+    color: hotpink;
+}
+
+a:hover {
+    color: aquamarine;
+}
+
+i:hover {
+    background-color: hotpink;
+}

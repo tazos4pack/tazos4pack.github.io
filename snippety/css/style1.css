@@ -1,0 +1,13 @@
+.out {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    background: silver;
+}
+
+.in {
+    background: gold;
+    align-self: center;
+    padding: 8rem;
+}

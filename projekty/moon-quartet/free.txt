@@ -1,0 +1,109 @@
+Logo
+Logo FB
+Soundcloud Logo
+Soundcloud Tło
+Youtube Logo
+Youtube Tło
+Favicon
+
+plansza z logo z adresem pod spodem
+style css dla guzików w ofercie
+
+997666CD!5
+
+
+STRONA:
+O nas 2 rows + popiersia
+Oferta
+Nagrania
+Galeria
+Partnerzy
+Kontakt
+
+
+Moon Quartet to prężnie rozwijający się zespół kameralny, specjalizujący się w oprawie muzycznej gal, eventów, ślubów i wszelkich innych uroczystości. Angażuje się również w sesje studyjne.
+
+Zespół tworzą instrumentalistki o bogatym życiorysie artystycznym, obecnie zatrudnione w prestiżowych orkiestrach w Warszawie. Prywatnie przyjaciółki pozytywnie nastawione do świata :) 
+
+To, co wyróżnia Moon Quartet na rynku muzycznym, to piękne brzmienie, wysoki poziom wykonawczy i obszerny repertuar, składający się zarówno z lekkiej muzyki rozrywkowej - znanych standardów, popularnych tematów z seriali i muzyki filmowej, jak i arcydzieł muzyki poważnej. Będąc bowiem absolwentkami wyższych uczelni muzycznych, specjalizujemy się w muzyce klasycznej, której również nie brakuje w naszej ofercie. 
+
+Znakiem rozpoznawczym Moon Qartet są doskonałe aranżacje aktualnych hitów ze światowych list przebojów.
+
+Jesteśmy w stanie zaaranżować każdy utwór na Państwa życzenie :) Najważniejsza dla nas jest wysoka jakość naszej muzyki i satysfakcja KIientów. 
+
+
+
+
+<header>
+  <a href="">logo</a>
+</header>
+<nav>
+  <ul>
+		<li><a href="">one</a></li>
+    <li><a href="">two</a></li>
+    <li><a href="">three</a></li>
+    <li><a href="">four</a></li>
+  </ul>
+</nav>
+
+
+
+/* Logo is placed within header element, separate from nav.
+They're both centered horizontally and floated to align vertically.
+The li right before the logo has additional margin to make space for it.
+For mobile we cancel all those weird styles so nav goes naturally under the header.*/
+
+header {
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+
+header a {
+	position: relative;
+	z-index: 5;
+	color: green;
+}
+
+nav {
+  float: left;
+  margin-top: -28px; /*arbitrary*/
+  width: 100%;
+  text-align: center;
+}
+
+ul {
+  text-align: center;
+  display: table;
+  list-style: none;
+  padding: 0; /*arbitrary*/
+  margin: 0 auto;
+}
+
+li {
+  display: list-item;
+  text-align: center;
+  float: left;
+  padding: 10px 20px; /*arbitrary*/
+}
+
+li:nth-of-type(2) { /*arbitrary*/
+	margin-right: 30px; /*arbitrary*/
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        float: none;
+    }
+	nav {
+		float: none;
+		margin: 0;
+	}
+	li {
+		display: block;
+		float: none;
+	}
+	li:nth-of-type(2) {
+		margin-right: 0; /*arbitrary*/
+	}
+}

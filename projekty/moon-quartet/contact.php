@@ -4,23 +4,23 @@
  */
 
 // an email address that will be in the From field of the email.
-$from = 'Demo contact form <demo@domain.com>';
+$from = 'Formularz ze strony <demo@domain.com>';
 
 // an email address that will receive the email with the output of the form
-$sendTo = 'Formularz <mateusz.wasiucionek@gmail.com>';
+$sendTo = 'Formularz <kontakt@moonquartet.pl>';
 
 // subject of the email
-$subject = 'New message from contact form';
+$subject = 'Nowa wiadomość';
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
-$fields = array('name' => 'Name', 'surname' => 'Surname', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message'); 
+$fields = array('name' => 'Imię', 'surname' => 'Nazwisko', 'phone' => 'Telefon', 'email' => 'Email', 'message' => 'Wiadomość'); 
 
 // message that will be displayed when everything is OK :)
-$okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
+$okMessage = 'Dziękujemy za wiadomość, postaramy się skontaktować jak najszybciej.';
 
 // If something goes wrong, we will display this message.
-$errorMessage = 'There was an error while submitting the form. Please try again later';
+$errorMessage = 'Przepraszamy, wystąpił błąd podczas wysyłania wiadomośći. Spróbuj ponownie później, lub użyj danych kontaktowych po lewej stronie.';
 
 /*
  *  LET'S DO THE SENDING
@@ -34,7 +34,7 @@ try
 
     if(count($_POST) == 0) throw new \Exception('Form is empty');
             
-    $emailText = "You have a new message from your contact form\n=============================\n";
+    $emailText = "Nowa wiadomość ze strony moonquartet.pl \n=============================\n";
 
     foreach ($_POST as $key => $value) {
         // If the field exists in the $fields array, include it in the email 

@@ -64,5 +64,5 @@ for (var b = 0; b < 10; b++) {
     } else {
         console.log(b);
     }
-    console.log("-------");
+    console.log("¯\\_(ツ)_/¯");
 }

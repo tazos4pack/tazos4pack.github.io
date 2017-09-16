@@ -1,0 +1,43 @@
+#first {
+    color: blue;
+}
+
+.niebieska {
+    background-color: blue;
+}
+
+.zielona {
+    background-color: green;
+}
+
+.s {
+    margin-top: 100px;
+}
+
+.hideShow {
+    display: none;
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
+
+.hideShow1 {
+    display: none;
+    height: 200px;
+    width: 200px;
+    background-color: green;
+}
+
+.hideShow2 {
+    display: none;
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+}
+
+.hideShow3 {
+    display: none;
+    height: 200px;
+    width: 200px;
+    background-color: cyan;
+}

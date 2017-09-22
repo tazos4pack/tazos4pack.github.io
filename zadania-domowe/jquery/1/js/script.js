@@ -1,5 +1,4 @@
 $(function () {
-    $('h2').hide();
     $('#start-animacji').click(function () {
         $('#kwadrat').animate({
             marginLeft: '100px',
@@ -9,6 +8,5 @@ $(function () {
         $('#kwadrat').animate({
             backgroundColor: '#00F'
         }, 5000)
-        $('h2').show();
     });
 });

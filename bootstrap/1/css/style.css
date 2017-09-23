@@ -1,0 +1,26 @@
+body {
+    padding-top: 40px;
+}
+
+
+/*
+.container {
+    margin-bottom: 10px;
+}
+*/
+
+.container .outer .inner {
+    height: 100px;
+    background-color: red;
+}
+
+.item img {
+    margin: 0 auto;
+}
+
+
+/*
+.container-fluid {
+    height: 100px;
+    background-color: skyblue;
+}*/

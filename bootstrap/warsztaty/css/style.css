@@ -72,7 +72,7 @@ section .title {
 }
 
 header {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../img/header/pictures_on_the_wall.jpg");
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../img/1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

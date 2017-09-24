@@ -236,7 +236,7 @@ footer .fa {
     border-radius: 50%;
     color: #FFFFFF;
     line-height: 30px;
-    margin: 10px 5px;
+    margin: 6px 5px 0 5px;
     font-size: 1.6em;
     border: 1px solid #0ed8d6;
     transition: all 0.4s;
@@ -245,6 +245,10 @@ footer .fa {
 footer .fa:hover {
     background-color: #FFFFFF;
     color: #0ed8d6;
+}
+
+footer .footer-text {
+    margin-top: 3px;
 }
 
 #portfolio {
@@ -349,4 +353,9 @@ footer .fa:hover {
 #team .fa:hover {
     background-color: #0ed8d6;
     color: #ffffff;
+}
+
+.navbar-default div.navbar-collapse {
+    border-top: none;
+    box-shadow: none;
 }

@@ -1,0 +1,24 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0 auto;
+    width: 90%;
+    min-height: 100%;
+    background: #bffff6;
+    background: -moz-linear-gradient(top, #bffff6 0%, #f8b500 100%, #fbdf93 100%);
+    background: -webkit-linear-gradient(top, #bffff6 0%, #f8b500 100%, #fbdf93 100%);
+    background: linear-gradient(to bottom, #bffff6 0%, #f8b500 100%, #fbdf93 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bffff6', endColorstr='#fbdf93', GradientType=0);
+}
+
+#main {
+    text-align: center;
+    padding-top: 10%;
+}
+
+p {
+    font-size: 2em;
+}

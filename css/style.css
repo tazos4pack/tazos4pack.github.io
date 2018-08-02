@@ -47,6 +47,10 @@ p {
     border: none;
 }
 
+#thatsMe {
+    z-index: 20;
+}
+
 .me {
     float: left;
     width: 126px;
@@ -110,32 +114,7 @@ p {
     background-color: #222;
     height: 100vh;
     color: white;
-}
-
-.motto .grey {
-    color: #aaa;
-}
-
-.motto .red {
-    color: #ff3c3c;
-}
-
-.motto .violet {
-    color: #e632ff;
-}
-
-.motto .blue {
-    color: #1eb4ff;
-}
-
-.motto .reflection {
-    position: absolute;
-    left: -300px;
-    width: 300px;
-    height: 200%;
-    background-color: transparent;
-    box-shadow: 400px 0 200px #fff;
-    opacity: .1;
+    z-index: 0;
 }
 
 .cta {
@@ -445,4 +424,15 @@ footer {
         float: left;
         padding-right: 6px;
     }
+}
+
+
+#myVideo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
 }

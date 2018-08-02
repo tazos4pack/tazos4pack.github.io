@@ -293,6 +293,10 @@ p {
     color: #1ba0a5;
 }
 
+.name img {
+    width: 100%;
+}
+
 footer {
     background-color: #333;
     color: #aaa;

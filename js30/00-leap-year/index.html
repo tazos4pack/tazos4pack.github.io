@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Raz na cztery lata...</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="main">
+        <div>
+            <h1>Do następnych urodzin zostało:</h1>
+            <p id="odliczanko"></p>
+        </div>
+
+
+        <div>
+            <h1>Sprawdź, czy dany rok jest przestepny:</h1>
+            <p>Czy rok <input id="year" type="number" placeholder="(podaj rok)" required> jest rokiem przestępnym <input type="submit" value="?" onclick="isLeap()"></p>
+            <p id="is-leap"></p>
+        </div>
+    </div>
+    <script src="js/odliczanie.js"></script>
+    <script src="js/sprawdzanie.js"></script>
+</body>
+
+</html>

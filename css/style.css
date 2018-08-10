@@ -297,6 +297,10 @@ p {
     width: 100%;
 }
 
+.portfolio {
+    height: auto;
+}
+
 footer {
     background-color: #333;
     color: #aaa;
